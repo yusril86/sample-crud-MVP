@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">note_MVPPattern</string>
+    <string name="to_do">To do</string>
+    <string name="catatan">Masukkan Catatan...</string>
+    <string name="date">21 agustus 2019</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".editor.EditorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tittle"
+            android:hint="@string/to_do"
+            android:textSize="25sp"
+            android:inputType="textCapSentences"
+            tools:ignore="Autofill" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:layout_below="@id/tittle"
+            android:hint="@string/catatan"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:gravity="top|start"
+            android:layout_marginTop="20dp"
+            />
+        <com.thebluealliance.spectrum.SpectrumPalette
+            android:id="@+id/palette"
+            android:layout_below="@id/note"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            app:spectrum_colors="@array/demo_colors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.thebluealliance.spectrum.SpectrumPalette>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
